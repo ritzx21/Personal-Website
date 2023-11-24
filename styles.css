@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@100;400&family=Ubuntu&display=swap');
+
+:root {
+    --primaryColor: #000000;
+    --secondColor: #FB2576;
+    --thirdColor: #150050;
+    --textColor: #F3E8FF;
+    --gray: rgba(42, 53, 62, 0.4);
+}
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    border: none;
+
+}
+
+/* NAVBAR */
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    background: var(--primaryColor);
+    color: var(--textColor);
+    background-image: url("images/bg3.webp");
+
+
+}
+
+#title {
+
+    font-size: 3rem !important;
+    color: var(--secondColor) !important;
+}
+
+#mainNavbar {
+    font-size: 1rem;
+    background-color: var(--primaryColor) !important;
+    border-bottom: 1px solid var(--gray);
+}
+
+#mainNavbar .nav-item .nav-link {
+    position: relative;
+    color: var(--textColor);
+}
+
+#mainNavbar .nav-item .nav-link:hover {
+    color: var(--secondColor);
+}
+
+#mainNavbar .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondColor);
+    bottom: -3px;
+    left: 0%;
+    transition: ease .40s;
+}
+
+#mainNavbar .nav-item:not(:last-child) .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+
+}
+
+
+/* ABOUT SECTION */
+
+/* IMAGE */
+img {
+    width: 80%;
+}
+
+
+
+.btn-primary,
+.btn-outline-primary {
+    --bs-btn-border-color: var(--secondColor);
+    --bs-btn-color: var(--secondColor);
+    --bs-btn-bg: var(--primaryColor);
+    --bs-btn-hover-color: var(--secondColor);
+    --bs-btn-hover-bg: var(--thirdColor);
+    --bs-btn-hover-border-color: var(--secondColor);
+
+
+}
+
+/* p {
+    text-align: center;
+
+} */
+
+/* 
+section {
+    padding: 5rem;
+} */
+#about .social a {
+    transition: all .4s;
+}
+
+#about .social a:hover {
+    color: var(--textColor);
+    transform: scale(1.2);
+}
+
+#about h1 .typer {
+    color: var(--secondColor);
+}
+
+/* About me section */
+
+#about_me {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+#skills {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
+
+#contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* SKILLS section */
+h3 {
+    padding: auto;
+}
+
+h5 {
+    padding-top: 20px;
+}
+
+
+
+.skill {
+    background: var(--gray);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.skill:hover {
+    transform: scale(1.12) rotate(-5deg);
+    box-shadow: 0px 10px 25px 10px rgba(255, 68, 204, 40%);
+}
+
+/* CONTACT SECTION */
+.contact-bg {
+    background-color: var(--secondColor);
+    height: 70vh;
+    padding: 50px;
+}
+
+form input,
+textarea {
+    color: var(--textColor) !important;
+    background-color: var(--primaryColor) !important;
+    text-emphasis-color: var(--textColor);
+    text-decoration-color: #F3E8FF !important;
+}
